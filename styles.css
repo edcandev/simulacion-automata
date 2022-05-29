@@ -1,0 +1,111 @@
+*{
+    border: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.body{
+    background-color: #5060af;
+}
+
+.conte{
+    height: max-content;
+}
+
+.conte__2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80px;
+    background-color: #1c234b;
+}
+
+.conte__2 input{
+    margin: 5px;
+    padding: 5px;
+    background-color: #394ec4;
+    font-weight: bold;
+}
+
+.conte__q0{
+    margin: 20px auto;
+    position: relative;
+    background-color: #1c234b;
+    width: 800px;
+    height: 800px;
+}
+
+.conte__q0 img{
+    position: absolute;
+}
+
+.q0__torna{
+    top:0px;
+    left:0px;
+    z-index: 10;
+    width: 800px;
+}
+
+.q1__torna{
+    opacity: 0;
+    top:0px;
+    left:0px;
+    z-index: 15;
+    width: 800px;
+    transition: opacity .5s;
+}
+
+.slide{
+    top: 550px;
+    left: 700px;
+    z-index: 20;
+}
+
+.poten{
+    top: 610px;
+    left: 60px;
+    z-index: 20;
+}
+
+
+.palanca{
+    left: 550px;
+    top: 125px;
+    z-index: 21;
+}
+
+.palanca-on{
+    opacity:0;
+    left: 487px;
+    top: 95px;
+    transform: rotate(30deg);
+    z-index: 21;
+}
+
+
+.vinyl{
+    opacity: 0;
+    left:95px;
+    top:145px;
+    z-index: 16;
+    transition: opacity .5s;
+    animation-name: rotar;
+    animation-duration: 2s;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotar{
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg);}
+}
+
+
+
+
+
+
+
